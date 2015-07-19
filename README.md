@@ -1,2 +1,3 @@
 # notes
-Study notes
+学习笔记存放处。
+但是还是不习惯Markdown的缩进，老是无意搞出一堆代码块。
