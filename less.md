@@ -222,27 +222,28 @@ a.active {
 	spin(@color, 10);         // return a color with a 10 degree larger in hue than @color
 	spin(@color, -10);        // return a color with a 10 degree smaller hue than @color	
 	```
+	
 ## 命名空间
 	
-	```less
-	#bundle {
-	  .button () {
-	    display: block;
-	    border: 1px solid black;
-	    background-color: grey;
-	    &:hover { background-color: white }
-	  }
-	  .tab { ... }
-	  .citation { ... }
-	}		
-	```
-	如果另一段样式与#bundle .button相同，就可以像下面这样直接引入，有点像html中引入外部文件
-	
-	```less
-	#header a {
-	  color: orange;
-	  #bundle > .button;
-	}		
-	```
+```less
+#bundle {
+  .button () {
+    display: block;
+    border: 1px solid black;
+    background-color: grey;
+    &:hover { background-color: white }
+  }
+  .tab { ... }
+  .citation { ... }
+}		
+```
+如果另一段样式与#bundle .button相同，就可以像下面这样直接引入，有点像html中引入外部文件
+
+```less
+#header a {
+  color: orange;
+  #bundle > .button;
+}		
+```
 
 *例子引用自 http://www.w3cplus.com/css/less
