@@ -55,7 +55,7 @@
   
 ```less
 #header {
-	.roundedCorners;
+	.roundedCorners();
 }
 #footer {
 	.roundedCorners(10px);
