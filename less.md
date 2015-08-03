@@ -19,6 +19,8 @@
 	```
 
   2. 应用到样式或类名中
+  
+	运用到样式中
 	
 	```less
 	#header {
@@ -33,6 +35,7 @@
 		color: #4d926f;
 	}
 	```
+	另外运用到类名中
 	
 	```less
 	@mySelector: banner;
