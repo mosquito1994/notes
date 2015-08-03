@@ -18,7 +18,7 @@
 	@hightlight: color;
 	```
 
-  2. 应用到样式中
+  2. 应用到样式或类名中
 	
 	```less
 	#header {
@@ -33,7 +33,25 @@
 		color: #4d926f;
 	}
 	```
-
+	
+	```less
+	@mySelector: banner;
+	
+	.@{mySelector} {
+	  font-weight: bold;
+	  line-height: 40px;
+	  margin: 0 auto;
+	}
+	```
+	编译结果为
+	
+	```css
+	.banner {
+	  font-weight: bold;
+	  line-height: 40px;
+	  margin: 0 auto;
+	}
+	```
   3. 规则
 
 	后面定义的变量会覆盖前面的变量，但是所有的变量值都将取最后定义的值
@@ -246,4 +264,4 @@ a.active {
 }		
 ```
 
-*例子引用自 http://www.w3cplus.com/css/less
+*大部分例子引用自 http://www.w3cplus.com/css/less
